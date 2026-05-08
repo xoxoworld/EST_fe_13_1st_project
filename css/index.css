@@ -773,20 +773,8 @@ section {
   background-color: #fff;
 }
 
-.recruitment-nav {
-  background-color: #1d352f;
-  padding: 40px 32px;
-}
-
-.recruitment-menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  list-style: none;
-  padding: 0;
-}
-
 .menu-item {
+  grid-column: 1;
   background-color: #1d352f;
   padding: 40px 32px;
 
@@ -795,21 +783,18 @@ section {
   justify-content: center;
   gap: 8px;
   /* 행 구분선*/
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #232e3f; /* navy*/
 }
 
 .menu-item:nth-child(1) {
-  grid-column: 1;
   grid-row: 1;
 }
 
 .menu-item:nth-child(2) {
-  grid-column: 1;
   grid-row: 2;
 }
 
 .menu-item:nth-child(3) {
-  grid-column: 1;
   grid-row: 3;
   border-bottom: none;
 }
@@ -821,17 +806,10 @@ section {
   color: #85ada0;
 }
 
-.recruitment-content {
-  flex: 1; /* 남은 공간 모두 차지 */
-  padding: 48px;
-  display: flex;
-  flex-direction: column;
-  gap: 48px; /* 세로 큰 그룹 간격 */
-}
-
 .content-header,
 .recruitment-check-list,
 .process-steps {
+  grid-column: 2/4;
   padding: 32px;
   border-bottom: 1px solid #e9ecef;
   background: #fff;
@@ -839,8 +817,6 @@ section {
 
 /* 컨텐츠 상단 (뱃지, 날짜, D-day) */
 .content-header {
-  grid-column: 2/4;
-  grid-row: 1;
   display: flex;
   align-items: center;
   justify-content: space-between; /* 양 끝 정렬 */
@@ -864,14 +840,13 @@ section {
 
 /* 체크리스트 */
 .recruitment-check-list {
-  grid-column: 2/4;
-  grid-row: 2;
+  display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 16px;
   list-style: none;
-  padding: 0;
 }
 
 .check-item {
@@ -885,15 +860,11 @@ section {
 }
 
 .process-steps {
-  grid-column: 2/4;
-  grid-row: 3;
-
   display: flex;
   align-items: center;
   justify-content: space-between; /* 단계들 균등 배치 */
   gap: 8px;
   list-style: none;
-  padding: 0;
 
   border-bottom: none;
 }
