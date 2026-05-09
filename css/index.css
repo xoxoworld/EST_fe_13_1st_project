@@ -782,8 +782,6 @@ section {
   flex-direction: column;
   justify-content: center;
   gap: 8px;
-  /* 행 구분선*/
-  border: 1px solid #232e3f; /* navy*/
 }
 
 .menu-item:nth-child(1) {
@@ -796,7 +794,6 @@ section {
 
 .menu-item:nth-child(3) {
   grid-row: 3;
-  border-bottom: none;
 }
 
 .menu-title {
@@ -811,7 +808,6 @@ section {
 .process-steps {
   grid-column: 2/4;
   padding: 32px;
-  border-bottom: 1px solid #e9ecef;
   background: #fff;
 }
 
@@ -863,8 +859,6 @@ section {
   display: flex;
   gap: 32px;
   list-style: none;
-
-  border-bottom: none;
 }
 
 .step {
@@ -875,7 +869,6 @@ section {
 
 .step-box {
   width: 100%;
-  min-height: 96px;
 
   display: flex;
   flex-direction: column;
