@@ -861,30 +861,20 @@ section {
 
 .process-steps {
   display: flex;
-  align-items: center;
-  justify-content: space-between; /* 단계들 균등 배치 */
-  gap: 8px;
+  gap: 32px;
   list-style: none;
 
   border-bottom: none;
 }
 
 .step {
+  position: relative;
   flex: 1;
-
   display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-/* 마지막 단계는 화살표가 없으므로 제외 */
-.step:last-child .arrow {
-  display: none;
 }
 
 .step-box {
-  flex: 1;
-
+  width: 100%;
   min-height: 96px;
 
   display: flex;
@@ -906,8 +896,17 @@ section {
 }
 
 .arrow {
+  position: absolute;
+  width: 24px;
+
+  right: -29px;
+  top: 50%;
+  transform: translateY(-50%); /* 자신의 높이를 기준으로 수직 중앙 정렬 */
+
+  z-index: 1;
+
   color: #adb5bd;
-  font-size: 20px;
+  font-size: 24px;
 }
 /* recruitment section css */
 
